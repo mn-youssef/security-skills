@@ -28,7 +28,12 @@ security-testing         🧭  orchestrator / entry point (authorization gate + 
 ```
 
 ## Scope coverage
-Web frontend · Backend API (REST/GraphQL/gRPC/WebSocket) · Database · Auth & sessions · Business logic
+
+- **Web frontend**
+- **Backend API** — REST, GraphQL, gRPC, WebSocket
+- **Database**
+- **Auth & sessions**
+- **Business logic**
 
 ## Install
 
