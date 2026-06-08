@@ -1,0 +1,15 @@
+{
+  "name": "security-skills",
+  "owner": {
+    "name": "Youssef Mansouri",
+    "url": "https://github.com/mn-youssef"
+  },
+  "plugins": [
+    {
+      "name": "security",
+      "description": "Defensive security & pentest skill suite for apps you own or are authorized to test — recon, threat modeling, static code audit, an execution harness, and deep-dive specialists (access control, auth, business logic, API, client-side, injection, file-upload/SSRF, secrets), plus vulnerability chaining, hardening, and reporting.",
+      "source": ".",
+      "homepage": "https://github.com/mn-youssef/security-skills"
+    }
+  ]
+}

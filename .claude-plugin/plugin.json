@@ -1,0 +1,24 @@
+{
+  "name": "security",
+  "description": "Defensive security & pentest skill suite for apps you own or are authorized to test — recon -> find/exploit specialists -> chain -> harden -> report. App/web/API focused, authorization-gated.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Youssef Mansouri"
+  },
+  "homepage": "https://github.com/mn-youssef/security-skills",
+  "repository": "https://github.com/mn-youssef/security-skills",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "pentest",
+    "appsec",
+    "owasp",
+    "red-team",
+    "vulnerability",
+    "authorization",
+    "authentication",
+    "injection",
+    "ssrf"
+  ],
+  "skills": "./skills/"
+}
