@@ -13,6 +13,38 @@ your own weaknesses, then close them.
 **Core principle:** Attackers think in *paths*, defenders think in *lists*. A defender must
 be right everywhere; an attacker needs one weak link. Hunt the path.
 
+## How to run this orchestrator (MANDATORY — read first)
+This skill is a **router, not a substitute** for the skills it names. The tables below tell you
+*which* skill to open at each phase — you MUST actually open it with the `Skill` tool.
+
+**The rule:** before doing the work of a phase, invoke that phase's skill and follow its
+checklist. Reading a one-line description in a routing table is NOT running the skill and does
+NOT count as coverage. Doing the work "from your own expertise" instead of invoking the skill is
+the failure this section exists to stop.
+
+- RECON → `recon-and-osint`  ·  PLAN → `threat-modeling`
+- FIND/EXPLOIT → invoke **each applicable** specialist (`access-control-testing`,
+  `authentication-testing`, `injection-testing`, `file-upload-and-ssrf`, `api-security-testing`,
+  `client-side-exploitation`, `business-logic-testing`, `secrets-management-audit`) **before**
+  testing that area — plus `security-code-audit` (static) and `active-pentest` (dynamic).
+- CHAIN → `vulnerability-chaining`  ·  FIX → `security-hardening`  ·  REPORT → `pentest-reporting`
+
+**Coverage honesty:** in the coverage report, mark a skill ✓ ONLY if you invoked it via the
+`Skill` tool. If you applied its methodology from memory without invoking it, write
+"methodology-only". If it's irrelevant to the target, write "N/A — <reason>". Never mark ✓ to
+mean "I did similar work."
+
+**Red flags — STOP and invoke the skill before continuing:**
+- "I already know what this covers / I know this domain extremely well"
+- "The summary in the routing table is enough"
+- "I'll just start with the highest-yield target and do the work directly"
+- "I'll consult the specialist skills later / as a reference"
+- "The skill is overkill — I've found these bugs hundreds of times"
+- Time pressure: "the user wants results fast, skip the load step"
+
+Each of these is the exact rationalization that produces silent gaps. The map is not the
+territory — open each door (call `Skill`) before doing its work.
+
 ## Authorization Gate (do this first — every time)
 Before any testing, confirm out loud with the user:
 
@@ -118,6 +150,9 @@ gRPC stream ... yes   → ⚠ GAP: generic methodology + consider a new speciali
 - Applied fixes, each with a re-test confirming closure
 
 ## Common mistakes
+- **Reading the routing table instead of invoking the skills it routes to** → the summaries are
+  a map, not the territory. Open each door (call the `Skill` tool) before doing its work, and
+  mark it ✓ only if you actually invoked it (see "How to run this orchestrator").
 - **Skipping the threat model** → you test random things, miss the crown jewels.
 - **Auditing without authorization to test the live system** → stay in code audit only.
 - **Finding without fixing/re-testing** → a report nobody acts on isn't security.
