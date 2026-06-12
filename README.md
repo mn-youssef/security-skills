@@ -1,5 +1,7 @@
 # Security Skills
 
+[![skills.sh](https://skills.sh/b/mn-youssef/security-skills)](https://skills.sh/mn-youssef/security-skills)
+
 A portable set of **defensive security skills** for testing and hardening an application
 **you own or are authorized to test**. They apply attacker thinking (red team) to find
 vulnerabilities, then guide you to fix them (blue team).
