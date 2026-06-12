@@ -1,0 +1,52 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Start Here",
+      "description": "Orchestrator and entry point — confirms authorization and routes you to the right phase.",
+      "skills": [
+        "security-testing"
+      ]
+    },
+    {
+      "title": "Recon & Planning",
+      "description": "Discover the real attack surface and rank what to test first, before touching code.",
+      "skills": [
+        "recon-and-osint",
+        "threat-modeling"
+      ]
+    },
+    {
+      "title": "Find & Exploit",
+      "description": "Static (white-box) source review and the execution harness for running tests safely on apps you own.",
+      "skills": [
+        "security-code-audit",
+        "active-pentest"
+      ]
+    },
+    {
+      "title": "Deep-Dive Specialists",
+      "description": "Focused testers for each vulnerability class across web, API, auth, logic, and infrastructure.",
+      "skills": [
+        "access-control-testing",
+        "authentication-testing",
+        "business-logic-testing",
+        "api-security-testing",
+        "client-side-exploitation",
+        "injection-testing",
+        "file-upload-and-ssrf",
+        "secrets-management-audit"
+      ]
+    },
+    {
+      "title": "Chain, Fix & Report",
+      "description": "Combine findings into end-to-end attack paths, apply secure-coding fixes, then score and write up results.",
+      "skills": [
+        "vulnerability-chaining",
+        "security-hardening",
+        "pentest-reporting"
+      ]
+    }
+  ]
+}
